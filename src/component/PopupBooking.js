@@ -6,7 +6,7 @@ import CalendarPicker from './DatePicker';
 import nextimg from '../img/neset.svg'
 import CalendarPickerii from './Datepickeii'
 import { useState } from "react"
-import { format, eachDayOfInterval, isWeekend, isFriday, subDays, isSameDay, formatDistance, isAfter } from 'date-fns'
+import { format, eachDayOfInterval, isWeekend, isFriday, subDays, isSameDay, formatDistanceStrict, isAfter } from 'date-fns'
 import axios from 'axios';
 import React from "react";
 import { useParams } from 'react-router-dom';
@@ -80,7 +80,9 @@ const BookingNow = (props) => {
   if (!isSameDay(state[0].endDate, state[0].startDate)) {
 
 
-    totoalday = formatDistance(state[0].startDate, state[0].endDate).split(' ')
+    totoalday = formatDistanceStrict(state[0].startDate, state[0].endDate, {
+      unit: 'day'
+    }).split(' ')
     holiday = 0
     nomalday = 0
 

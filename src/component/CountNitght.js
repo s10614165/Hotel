@@ -1,6 +1,6 @@
 
 import { addDays, format, subDays, isSameDay, isFriday, isAfter } from "date-fns";
-import { formatDistance } from 'date-fns'
+import { formatDistanceStrict } from 'date-fns'
 import { eachDayOfInterval, isWeekend } from 'date-fns'
 import { el } from "date-fns/locale";
 // import zhCN from 'date-fns/locale/zh-CN';
@@ -28,7 +28,9 @@ const CountNight = (props) => {
   if (!isSameDay(state[0].endDate, state[0].startDate)) {
 
 
-    totoalday = formatDistance(state[0].startDate, state[0].endDate).split(' ')
+    totoalday = formatDistanceStrict(state[0].startDate, state[0].endDate, {
+      unit: 'day'
+    }).split(' ')
     holiday = 0
     nomalday = 0
 
@@ -72,7 +74,7 @@ const CountNight = (props) => {
   //   // console.log(result.eachDay[0])
   //   console.log(`假日${holiday}天,平日${nomalday}天`)
   // }
-
+  console.log(totoalday)
   return (
     <span className="h1 countNight">
       {`$${totoalprice}`}
