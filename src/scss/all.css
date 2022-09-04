@@ -414,6 +414,15 @@ li {
   width: 573px;
   position: relative;
 }
+.m_RoomInfo .Swipt .backtohome {
+  position: absolute;
+  top: 87px;
+  left: 128px;
+  z-index: 10;
+}
+.m_RoomInfo .Swipt .backtohome a {
+  color: #38470B;
+}
 .m_RoomInfo .Swipt .booknoww {
   color: #FFFFFF;
   background-color: #38470B;
@@ -519,7 +528,6 @@ li {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  height: 80%;
   background-color: #fff;
   color: #38470B;
 }
@@ -534,7 +542,7 @@ li {
 .m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea .WorringRepeat {
   color: red;
   font-size: 24px;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 .m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea .counttottal {
   color: #949C7C;

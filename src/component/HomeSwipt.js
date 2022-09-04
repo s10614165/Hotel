@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 export default function App(props) {
 
@@ -22,7 +22,12 @@ export default function App(props) {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        speed={5000}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
         className="homeSwiper"
       >
         <SwiperSlide><img src={home1} alt="home1" /></SwiperSlide>

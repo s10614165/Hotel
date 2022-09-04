@@ -81,7 +81,7 @@ const RoomInfo = () => {
           <div className="booknoww" onClick={() => { setPopupBooknowState(!popupBooknowState) }}>Booking now</div>
           <div className="backtohome">
             <Link to={'/'}>
-              {`< 返回其他房型`}
+              {`< 查看其它房型`}
             </Link></div>
           {/* <CalendarPicker
             state={state}
