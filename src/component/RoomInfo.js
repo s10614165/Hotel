@@ -8,8 +8,6 @@ import Swipt from './Swipt'
 import Amenities from './Amenities';
 import CountNight from './CountNitght';
 import NewDatePick from './NewDatePIck';
-// import CalendarPicker from './DatePicker';
-// import CalendarPickerii from './Datepickeii'
 import BookingNow from './PopupBooking'
 
 const Authorization = 'Bearer wBaeszD7xY40wcaUWDWvROq8HfaQOBeR2YaUo8XrpgEULOKO44j553I2EMM2'
@@ -83,14 +81,6 @@ const RoomInfo = () => {
             <Link to={'/'}>
               {`< 查看其它房型`}
             </Link></div>
-          {/* <CalendarPicker
-            state={state}
-            setState={setState}
-            bookingDay={bookingDay} />
-          <CalendarPickerii
-            state={state}
-            setState={setState}
-            bookingDay={bookingDay} /> */}
         </div>
 
         <div className='Info'>

@@ -59,7 +59,7 @@ const BookingNow = (props) => {
 
     return result
   }
-  // console.log(fullinput)
+
   let eachDays = []
   let holiday = 0;
   let nomalday = 0;
@@ -86,7 +86,7 @@ const BookingNow = (props) => {
     holiday = 0
     nomalday = 0
 
-    // console.log(BookingDay)
+
 
 
     if (eachDays !== undefined && !BookingDay.includes(state[0].endDate)) {

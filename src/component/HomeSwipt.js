@@ -1,15 +1,15 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import home1 from '../img/home1.png'
 import home2 from '../img/home2.png'
 import home3 from '../img/home3.png'
 import home4 from '../img/home4.png'
-// Import Swiper styles
+
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import required modules
+
 import { Pagination, Autoplay } from "swiper";
 
 export default function App(props) {
