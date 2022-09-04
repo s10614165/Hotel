@@ -133,8 +133,7 @@ const BookingNow = (props) => {
 
     } else (alert('請填寫完整'))
   }
-  console.log(postpPopupState)
-  console.log(postresState)
+
   BookingDay[0].forEach(day => {
     restultt.push(
       isSameDay(new Date(day), new Date(state[0].startDate))

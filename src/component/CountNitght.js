@@ -36,7 +36,7 @@ const CountNight = (props) => {
     if (eachDays !== undefined && !BookingDay.includes(state[0].endDate)) {
 
       if (isAfter(new Date(state[0].endDate), new Date(state[0].startDate))) {
-        console.log('in')
+
         if (isSameDay(new Date(state[0].startDate), new Date(subDays(state[0].endDate, 1)))) {
           eachDays = [new Date(state[0].startDate)]
           eachDays.forEach(day => {
