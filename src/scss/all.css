@@ -1,0 +1,752 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.df {
+  display: flex;
+}
+
+.db {
+  display: block;
+}
+
+.jcs {
+  justify-content: start;
+}
+
+.jcfe {
+  justify-content: flex-end;
+}
+
+.fdr {
+  flex-direction: row;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.jcse {
+  justify-content: space-evenly;
+}
+
+.fww {
+  flex-wrap: wrap;
+}
+
+.fwwr {
+  flex-flow: wrap-reverse;
+}
+
+.aic {
+  align-items: center;
+}
+
+.acc {
+  align-content: center;
+}
+
+.aife {
+  align-items: flex-end;
+}
+
+.ffrw {
+  flex-flow: row wrap;
+}
+
+.ffcw {
+  flex-flow: column wrap;
+}
+
+/* flex設定 END */
+.h1 {
+  font-size: 48px;
+}
+
+.h2 {
+  font-size: 32px;
+}
+
+.h3 {
+  font-size: 24px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+.h5 {
+  font-size: 18px;
+}
+
+.h6 {
+  font-size: 16px;
+}
+
+.h7 {
+  font-size: 12px;
+}
+
+.h29 {
+  font-size: 29px;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.fsi {
+  font-style: italic;
+}
+
+.tac {
+  text-align: center;
+}
+
+.ma {
+  margin: 0 auto;
+}
+
+.wrap {
+  font-family: "Roboto", sans-serif;
+}
+
+.r {
+  background-color: red;
+}
+
+.b {
+  background-color: blue;
+}
+
+.g {
+  background-color: green;
+}
+
+.bn {
+  color: #56c4c5;
+}
+
+.swg {
+  color: #3F5D45;
+}
+
+.fw {
+  color: #FFFFFF;
+}
+
+.-dn {
+  display: none;
+}
+
+.HomepageRoomImg {
+  display: flex;
+  width: 825px;
+  flex-wrap: wrap;
+}
+
+.homeImgLi {
+  position: relative;
+}
+
+.Roomname {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  color: black;
+  width: 275px;
+  height: 275px;
+  font-size: 19px;
+  line-height: 275px;
+  display: inline-block;
+  opacity: 0;
+}
+
+.Roomname:hover {
+  display: block;
+  color: #fff;
+  background-color: rgba(56, 71, 11, 0.6);
+  opacity: 1;
+}
+
+.m_homepage {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 95%;
+  top: 60px;
+  left: 0px;
+  z-index: 2;
+}
+
+.MainLogo {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.HomeLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.HomeLogo span {
+  color: #fff;
+}
+
+.m_Swipt {
+  z-index: -1;
+  width: 100vh;
+  height: 100vh;
+}
+.m_Swipt .swiper {
+  width: 100vw;
+  height: 100vh;
+}
+.m_Swipt .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.m_Swipt .swiper-horizontal > .swiper-pagination-bullets,
+.m_Swipt .swiper-pagination-bullets.swiper-pagination-horizontal,
+.m_Swipt .swiper-pagination-custom,
+.m_Swipt .swiper-pagination-fraction {
+  width: 30% !important;
+}
+
+.m_RoomInfo {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+}
+.m_RoomInfo .Info {
+  margin-left: 30px;
+  margin-right: 168px;
+  color: #38470B;
+}
+.m_RoomInfo .Info .RoomTitle {
+  align-items: flex-end;
+  color: #38470B;
+  margin-top: 107px;
+}
+.m_RoomInfo .Info .description li {
+  list-style: disc !important;
+  list-style-position: inside !important;
+}
+.m_RoomInfo .Info .checkTime {
+  margin: 38px 0px;
+}
+.m_RoomInfo .Info .amenities {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.m_RoomInfo .Info .amenities .statusfalse {
+  opacity: 0.6;
+}
+.m_RoomInfo .Info .amenities .amenitieStatus {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 36px;
+  margin-top: 20px;
+}
+.m_RoomInfo .Swipt {
+  width: 573px;
+  position: relative;
+}
+.m_RoomInfo .Swipt .booknoww {
+  color: #FFFFFF;
+  background-color: #38470B;
+  width: 252px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 160px;
+  bottom: 20%;
+  z-index: 2;
+}
+.m_RoomInfo .Swipt .countNight {
+  position: absolute;
+  left: 194px;
+  bottom: 30%;
+  z-index: 2;
+}
+.m_RoomInfo .Swipt .mySwiper {
+  height: 100%;
+}
+.m_RoomInfo .Swipt .mySwiper .swiper {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+.m_RoomInfo .Swipt .mySwiper .swiper-wrapper {
+  height: 100%;
+}
+.m_RoomInfo .Swipt .mySwiper .swiper-button-next {
+  display: none;
+}
+.m_RoomInfo .Swipt .mySwiper .swiper-button-prev {
+  display: none;
+}
+.m_RoomInfo .Swipt .mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m_RoomInfo .Swipt .mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.m_RoomInfo .popupImage {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.646);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.m_RoomInfo .popupImage .mySwiper .swiper {
+  width: 100vw;
+  height: 100vh;
+}
+.m_RoomInfo .popupImage .mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m_RoomInfo .popupImage .mySwiper .swiper-slide img {
+  display: block;
+  width: 30%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.m_RoomInfo .Bookingpopup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.646);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  color: #38470B;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom {
+  max-width: 465px;
+  width: 30%;
+  background-color: #38470B;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea {
+  width: 80%;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea .WorringRepeat {
+  color: red;
+  font-size: 24px;
+  margin-top: 90px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea .counttottal {
+  color: #949C7C;
+  margin-top: 100px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea h6 {
+  color: #FFFFFF;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea .secondate {
+  margin-bottom: 20px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea .postinfo {
+  margin-top: 90px;
+  width: 100%;
+  text-align: center;
+  padding: 9px 0px;
+  background: #949C7C 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea input {
+  width: 100%;
+  height: 38px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea input:last-child {
+  margin-bottom: 30px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .bookingFrom .inputarea .decerotline {
+  height: 1px;
+  border: 1px solid #FFFFFF;
+  margin-top: 20px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo {
+  width: 65%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .RoomTitle {
+  margin-top: 51px !important;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .RoomTitle .titleforbooking {
+  width: 100%;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .RoomTitle .titleforbooking .Notice_hairline__2vVyh {
+  flex-grow: 1;
+  height: 2px;
+  background-color: rgba(148, 156, 124, 0.2);
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .titleforbooking .Notice_hairline__2vVyh {
+  margin-left: 6.5px;
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(148, 156, 124, 0.2);
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .amenities {
+  margin-bottom: 26px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .amenities .statusfalse {
+  opacity: 0.6;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .amenities .amenitieStatus {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 36px;
+  margin-top: 20px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .infocontent {
+  margin-top: 12px;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .infocontent li {
+  font-size: 12px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .checkTime {
+  line-height: 30px;
+  margin-bottom: 27px;
+  margin-top: 8px;
+}
+.m_RoomInfo .Bookingpopup .bookingInfo .Roominfo .bookingprosses {
+  margin-top: 19px;
+  width: 90%;
+}
+.m_RoomInfo .Bookingpopup .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.m_RoomInfo .Bookingpopup .postStatepopup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.646);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+}
+.m_RoomInfo .Bookingpopup .postStatepopup span {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  background-color: #38470B;
+  color: #fff;
+}
+.m_RoomInfo .Bookingpopup .postStatepopup span .closefall {
+  z-index: 10;
+  color: #FFFFFF;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.m_RoomInfo .Bookingpopup .postStatepopup span .context {
+  width: 80%;
+}
+.m_RoomInfo .Bookingpopup .postStatepopup span .context .imgstate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.m_RoomInfo .Bookingpopup .postStatepopup span .context .imgstate .firstimgii {
+  position: relative;
+  z-index: 7;
+}
+.m_RoomInfo .Bookingpopup .postStatepopup span .context .imgstate .secondimgii {
+  display: inline;
+  width: 300px;
+  height: 300px;
+  z-index: 8;
+}
+.m_RoomInfo .Bookingpopup .postStatepopup span .context .postsuccess {
+  margin: 50px 0px;
+}
+
+.prossestext {
+  height: 86px;
+  text-align: center;
+}
+
+.prossesimg {
+  background-color: #949C7C;
+  height: 50px;
+}
+.prossesimg img {
+  width: 30px;
+  height: 32px;
+}
+
+.prosse {
+  width: 160px;
+  border: 1px #38470B solid;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.rdrDateRangeWrapper {
+  border: #38470B 1px solid !important;
+}
+.rdrDateRangeWrapper .rdrDateDisplay {
+  display: none !important;
+}
+.rdrDateRangeWrapper .rdrMonthAndYearPickers {
+  display: none;
+}
+.rdrDateRangeWrapper .rdrMonthName {
+  text-align: center;
+}
+.rdrDateRangeWrapper .rdrEndEdge {
+  color: #949C7C !important;
+  border-radius: 50% !important;
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 10px;
+}
+.rdrDateRangeWrapper .rdrStartEdge {
+  background-color: #38470B;
+  color: #38470B !important;
+  border-radius: 50% !important;
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 10px;
+}
+.rdrDateRangeWrapper .rdrInRange {
+  border-radius: 100px/200px;
+}
+.rdrDateRangeWrapper .rdrDayDisabled {
+  background-color: transparent !important;
+}
+.rdrDateRangeWrapper .rdrDayDisabled span {
+  text-decoration: line-through;
+}/*# sourceMappingURL=all.css.map */

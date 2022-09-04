@@ -1,0 +1,592 @@
+.HomepageRoomImg {
+  display: flex;
+  width: 825px;
+  flex-wrap: wrap;
+}
+
+.homeImgLi {
+  position: relative;
+}
+
+.Roomname {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  color: black;
+  width: 275px;
+  height: 275px;
+  font-size: 19px;
+  line-height: 275px;
+  display: inline-block;
+  opacity: 0;
+
+}
+
+.Roomname:hover {
+  display: block;
+  color: #fff;
+  background-color: rgba(56, 71, 11, .6);
+  opacity: 1;
+}
+
+.m_homepage {
+  // margin: 109px 128px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 95%;
+  top: 60px;
+  left: 0px;
+  z-index: 2;
+}
+
+.MainLogo {
+
+  object-fit: cover;
+}
+
+.HomeLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span {
+    color: #fff;
+    ;
+  }
+}
+
+.m_Swipt {
+  z-index: -1;
+  width: 100vh;
+  height: 100vh;
+
+  .swiper {
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    width: 30% !important;
+  }
+}
+
+.m_RoomInfo {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  justify-content: space-between;
+
+  .Info {
+    margin-left: 30px;
+    margin-right: 168px;
+    color: $green;
+
+    .RoomTitle {
+
+      align-items: flex-end;
+      color: $green;
+      margin-top: 107px;
+    }
+
+
+
+    .description li {
+      list-style: disc !important;
+      list-style-position: inside !important;
+
+
+    }
+
+    .checkTime {
+      margin: 38px 0px;
+    }
+
+    .amenities {
+      margin-top: 48px;
+      display: flex;
+      flex-wrap: wrap;
+
+
+
+      .statusfalse {
+        opacity: 0.6;
+
+      }
+
+      .amenitieStatus {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 36px;
+        margin-top: 20px;
+      }
+    }
+
+  }
+
+  .Swipt {
+    width: 573px;
+    position: relative;
+
+    .booknoww {
+      color: #FFFFFF;
+      background-color: $green;
+      width: 252px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 160px;
+      bottom: 20%;
+      z-index: 2;
+
+    }
+
+    .countNight {
+      position: absolute;
+      left: 194px;
+      bottom: 30%;
+      z-index: 2;
+    }
+
+    .mySwiper {
+      height: 100%;
+
+      .swiper {
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .swiper-wrapper {
+        height: 100%;
+      }
+
+      .swiper-button-next {
+        display: none;
+      }
+
+      .swiper-button-prev {
+        display: none;
+      }
+
+      .swiper-slide {
+
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        object-fit: contain;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .popupImage {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    .mySwiper {
+      .swiper {
+
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .swiper-slide {
+
+        text-align: center;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.2);
+        object-fit: contain;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 30%;
+        height: 100vh;
+        object-fit: cover;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .Bookingpopup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    .bookingInfo {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      height: 80%;
+      background-color: #fff;
+      color: #38470B;
+
+      .bookingFrom {
+        max-width: 465px;
+        width: 30%;
+        background-color: #38470B;
+
+        .inputarea {
+          width: 80%;
+
+          .WorringRepeat {
+            color: red;
+            font-size: 24px;
+            margin-top: 90px;
+          }
+
+          .counttottal {
+            color: #949C7C;
+            margin-top: 100px;
+          }
+
+          h6 {
+            color: #FFFFFF;
+            margin-top: 16px;
+            margin-bottom: 8px;
+          }
+
+          .secondate {
+            margin-bottom: 20px;
+          }
+
+          .postinfo {
+            margin-top: 90px;
+            width: 100%;
+            text-align: center;
+            padding: 9px 0px;
+            background: #949C7C 0% 0% no-repeat padding-box;
+            color: #FFFFFF;
+            font-size: 18px;
+
+          }
+
+          input {
+            width: 100%;
+            height: 38px;
+
+          }
+
+          input:last-child {
+            margin-bottom: 30px;
+          }
+
+          .decerotline {
+            height: 1px;
+            border: 1px solid #FFFFFF;
+            margin-top: 20px;
+          }
+        }
+
+      }
+
+      .Roominfo {
+        width: 65%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+
+        .RoomTitle {
+          margin-top: 51px !important;
+
+          .titleforbooking {
+            width: 100%;
+
+            .Notice_hairline__2vVyh {
+              // margin-left: 6.5px;
+              flex-grow: 1;
+              height: 2px;
+              background-color: rgba(148, 156, 124, .2);
+              // transform: translateY(2px);
+            }
+          }
+        }
+
+        .titleforbooking {
+          .Notice_hairline__2vVyh {
+            margin-left: 6.5px;
+            flex-grow: 1;
+            height: 1px;
+            background-color: rgba(148, 156, 124, .2);
+            // transform: translateY(2px);
+          }
+        }
+
+        .amenities {
+          margin-bottom: 26px;
+          display: flex;
+          flex-wrap: wrap;
+
+
+
+          .statusfalse {
+            opacity: 0.6;
+
+          }
+
+          .amenitieStatus {
+            display: flex;
+            align-items: flex-start;
+            margin-right: 36px;
+            margin-top: 20px;
+          }
+        }
+
+        .infocontent {
+          margin-top: 12px;
+          line-height: 25px;
+          margin-bottom: 12px;
+
+          li {
+            font-size: 12px;
+          }
+
+        }
+
+        .checkTime {
+          line-height: 30px;
+          margin-bottom: 27px;
+          margin-top: 8px;
+        }
+
+        .bookingprosses {
+          margin-top: 19px;
+          width: 90%;
+        }
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .postStatepopup {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.646);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 6;
+
+      span {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        background-color: $green;
+        color: #fff;
+
+        .closefall {
+          z-index: 10;
+          color: #FFFFFF;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
+        .context {
+          width: 80%;
+
+
+
+          .imgstate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60%;
+            object-fit: scale-down;
+
+
+
+            .firstimgii {
+              position: relative;
+              z-index: 7;
+            }
+
+            .secondimgii {
+              display: inline;
+              width: 300px;
+              height: 300px;
+              z-index: 8;
+            }
+          }
+
+          .postsuccess {
+            margin: 50px 0px;
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.prossestext {
+  height: 86px;
+  text-align: center;
+}
+
+.prossesimg {
+  background-color: #949C7C;
+  height: 50px;
+
+  img {
+    width: 30px;
+    height: 32px;
+  }
+}
+
+.prosse {
+  width: 160px;
+  border: 1px #38470B solid;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.rdrDateRangeWrapper {
+  border: #38470B 1px solid !important;
+
+  .rdrDateDisplay {
+    display: none !important;
+  }
+
+  .rdrMonthAndYearPickers {
+    display: none;
+  }
+
+  .rdrMonthName {
+    text-align: center;
+  }
+
+  .rdrEndEdge {
+    color: #949C7C !important;
+    border-radius: 50% !important;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
+  }
+
+  .rdrStartEdge {
+    background-color: #38470B;
+    color: #38470B !important;
+    border-radius: 50% !important;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
+  }
+
+  .rdrInRange {
+    border-radius: 100px/200px;
+  }
+
+  // .rdrStartEdge,
+  // .rdrInRange,
+  // .rdrEndEdge {
+  //   background-color: #38470B;
+  //   opacity: 0.2;
+
+  // }
+
+  // .rdrStartEdge~.rdrDayNumber {
+  //   background-color: #38470B;
+  //   border-radius: 50%;
+  //   width: 30px;
+  //   height: 30px;
+  //   position: absolute;
+  //   top: -1px;
+  //   left: 7px;
+  // }
+
+  .rdrDayDisabled {
+    background-color: transparent !important;
+
+    span {
+      text-decoration: line-through;
+    }
+  }
+}

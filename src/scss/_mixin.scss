@@ -1,0 +1,23 @@
+$primary: #203744;
+$secondary: #f5b199;
+$tertiary: #8491c3;
+$quaternary: #f7b977;
+$white: #ffffff;
+$font: 'Roboto';
+$maincolor: #FFD370;
+$size: 34px;
+$green: #38470B;
+
+@mixin pad {
+  @media (max-width:768px) {
+    @content
+  }
+}
+
+;
+
+@mixin mobile {
+  @media (max-width:568px) {
+    @content
+  }
+}
